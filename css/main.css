@@ -39,7 +39,7 @@
     }        
     /** CONFIGURACAO DA ZONA DE BOAS-VINDAS OU ZONE CENTRAL COM A LARGURA TABLET*/
     .direita-center{
-        background-image: url(../img/Job.png);
+        background-image: url(../Job.png);
         background-size: cover;
         background-attachment: fixed;
         background-color: rgba(0, 0, 0, 0.4);
@@ -337,7 +337,7 @@
                     /** CONFIGURACAO DA ZONA DE IMAGEM CENTRAL A DIREITA  COM A LARGURA MOBILE*/
                     .direita-center{
                         background-color: rgba(0, 0, 0, 0.4);
-                        background-image: url(../img/Job-mobile.png);
+                        background-image: url(../Job-mobile.png);
                         height: 48em;
                     }
                     /** CONFIGURACAO DO BOTAO DE ACTIVACAO DA NAVEGACAO COM A LARGURA MOBILE*/
