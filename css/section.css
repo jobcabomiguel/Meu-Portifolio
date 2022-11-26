@@ -1,0 +1,87 @@
+            .ponto{
+                font-size: 60px;
+                margin: 0;
+                color: rgba(0, 0, 0, 0.4);
+                padding: 0;
+                border-radius: 10px;
+                width: 20px;
+            }
+            #proficao{
+                transition: 1s;
+            }
+            .enfase{
+                color: white;
+                transition: 1s;
+            }
+            .fotos-zone{
+                display: inline-table;
+                width: 250px;
+                margin: 20px 0px;
+                height: 250px;
+                padding: 20px;
+                background-image: url(img/mobile.png);
+                background-size: 100% 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                color: white;
+                border: 2px solid beige;
+            }
+            #foto2{
+                background-image: url(img/agente-500.jpg); 
+                color: #fff;
+            }
+            #foto3{
+                background-image: url(img/agente-500.jpg); 
+                color: #fff;
+            }
+            #foto4{
+                background-image: url(img/agente-500.jpg); 
+                color: #fff;
+            }
+            #foto5{
+                background-image: url(img/casa.JPG); 
+                color: #fff;
+            }
+            #foto6{
+                background-image: url(img/GD.png); 
+                color: #fff;
+            }
+            #foto7{
+                background-image: url(img/casa.JPG); 
+                color: #fff;
+            }
+            #foto8{
+                background-image: url(img/GD.png); 
+                color: #fff;
+            }
+            video{
+                width: 70%;
+                margin: 2em auto;
+                display: block;
+            }
+            .linha-servicos li{
+                color: darkblue;
+            }
+            .seta1{
+                color: orangered;
+            }
+            .seta2{
+                color: orangered;
+            }
+            .objectos{
+                color: darkblue;
+            }
+            @media(max-width: 600px){
+                .fotos-zone{
+                    width: 100%;
+		    display: block;
+                    margin: 5px auto;
+                    height: 260px;
+                    padding: 5px;
+                    font-size: 12px;
+            }
+            video{
+                width: 100%;
+                margin: 0.5em auto;
+                display: block;
+            }
+            }
