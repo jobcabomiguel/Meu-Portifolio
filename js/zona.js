@@ -1,3 +1,12 @@
+        html = window.document.getElementById('html');
+        mobile = window.document.getElementById('mobile');
+        node = window.document.getElementById('node');
+        js = window.document.getElementById('js');
+        designer = window.document.getElementById('designer');
+        css = window.document.getElementById('css');
+        php = window.document.getElementById('php');
+
+
 function activar_links(valores){
      
      zone_links = window.document.getElementById('esquerda'); 
@@ -66,5 +75,33 @@ function call_back(){
             numero4 = window.document.getElementById('ponto4');
             numero4.classList.add('enfase');
        }
-    }
-    
+    } 
+function animarSessao(){
+     windowTop = window.pageYOffset / 20 ;
+     sobre = window.document.getElementById('habilidades');                         
+     sobreTop = sobre.offsetHeight * 4 - 40; 
+       if (windowTop >= sobreTop) {
+          somarValores() 
+       }else{
+          animarSessaoOff();
+       } 
+}
+    function somarValores(){
+          html.style.width = "85%";
+          mobile.style.width = "60%"; 
+          node.style.width = "40%"; 
+          js.style.width = "70%";
+          designer.style.width = "70%";
+          css.style.width = "80%"; 
+          php.style.width = "60%"
+     }
+     
+     function animarSessaoOff(){
+          html.style.width = "10%";
+          mobile.style.width = "10%"; 
+          node.style.width = "10%"; 
+          js.style.width = "10%";
+          designer.style.width = "10%";
+          css.style.width = "10%"; 
+          php.style.width = "10%"
+     }

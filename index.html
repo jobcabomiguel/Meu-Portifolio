@@ -6,9 +6,7 @@
      <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!-- Favicons -->
-  <link href="favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="img/job-mobile.png" rel="icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -18,13 +16,16 @@
     <title>Job Manuel Cabo Miguel</title>
     <style>
         
+        .espaco{
+            transition: 6s ease-in-out;
+        }
     </style>
     <link rel="stylesheet"  href="css/main.css">
     <link rel="stylesheet"  href="css/section.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </head>
-<body onload="profissoes()" id="body">
+<body onload="profissoes()" id="body" onscroll="animarSessao()">
     <main class="principal">
         <div class="button-mobile">
             <ul class="" onclick="activar_links(1)">
@@ -83,7 +84,7 @@
                 </div>
                 <div class="servicos" id="worked">
                     <h3>Serviços</h3>
-                    <p>  Todos os serviços que eu posso desenvolver são:</p>
+                    <p>  Meus Serviços :</p>
 
                 <div class="linha-servicos">
                          <ul class="">
@@ -106,55 +107,55 @@
              <div class="servicos" id="about"> 
                         <h3>Sobre me</h3>
                         
-                        <p>Job Miguel nascei em 04/07/2004 em Luanda no municipio do Cazenga onde passou uma
-                            boa parte da sua infancia, depois a sua familia mudou se para o Municipio de  Cacuaco onde 
-                            reside até</p>
+                        <p>Job Miguel nascei no dia 04 de Julho de 2004 em Luanda no municipio do Cazenga. Onde passou uma
+                            boa parte da sua infância. Depois com o passar do tempo a sua familia mudou se para o Municipio de  Cacuaco onde 
+                            reside até este momento.</p>
                             <p>
                             Job Miguel, estudante de informática no Instituto Médio Politecnico Alda Lara
-                            onde está a concluindo o seu Ensino Médio. 
+                            onde está a concluir o seu Ensino Médio. 
                             </p>
                                 
                             <p>
                             Job Miguel é um joven muito trabalhador e sonhador, estudante de desenvolvimento Web e Mobile muito apaixonado 
                             por TICs. Está a estudar o desenvolvimento Web e Mobile e procura trabalhar e desenvolver 
-                            um serviço de muita qualidade que satisfaça as necessidade e ajude no desenvolvimento económico e social de Angola. </p>
-                        <h2>Habiidade </h2>
+                            um serviço de muita qualidade que satisfaça as necessidade das pessoas e entidades empresarial e ajude no desenvolvimento socio-económico de Angola.</p>
+                        <h2 id="habilidades">Habiidade </h2>
                         
                         <div class="conhecimento-zone">
                         <p>HTML</p>
-                        <div class="contaner" style=""><span  style="width: 80%;" id="html" class="espaco"></span><span class="valor">90%</span>
+                        <div class="contaner" style=""><span   id="html" class="espaco"></span><span class="valor">90%</span>
                         </div></div>
                          
                          <div class="conhecimento-zone"> 
                             <p>CSS</p>
-                            <div class="contaner"><span class="espaco" id="css"  style="width: 75%;"></span><span class="valor">80%</span></div>
+                            <div class="contaner"><span class="espaco" id="css"></span><span class="valor">80%</span></div>
                         </div>
                         
-                        <div class="conhecimento-zone"> 
+                        <div class="conhecimento-zone" > 
                             <p>JAVASCRIPT</p>
-                            <div class="contaner" style=""><span class= "espaco" style="width: 70%;" ></span><span class="valor">70%</span></div>
+                            <div class="contaner" style=""><span class= "espaco"   id="js"></span><span class="valor">70%</span></div>
                         </div>
                         
                         <div class="conhecimento-zone"> 
                        <p>PHP</p>
-                       <div class="contaner" style=""><span class="espaco" style="width: 60%;" id="php">
+                       <div class="contaner" style=""><span class="espaco"  id="php">
                        </span><span class="valor">60%</span></div>
                        </div>
                        <div class="conhecimento-zone"> 
                        <p>NODE.JS</p>
-                       <div class="contaner" style=""><span class="espaco" style="width: 40%;" id="php">
+                       <div class="contaner" style=""><span class="espaco"  id="node">
                        </span><span class="valor">40%</span></div>
                        </div>
 
                        <div class="conhecimento-zone">
                        <p>WEB DESIGNER</p>
-                       <div class="contaner" style=""><span class="espaco" style="width: 70%;" id="php">
+                       <div class="contaner" style=""><span class="espaco"  id="designer">
                        </span><span class="valor">70%</span></div>
                        </div>
 
                     <div  class="conhecimento-zone"> 
                         <p>DESENVOLVIMENTO DE MOBILE</p>
-                        <div class="contaner" ><span class="espaco" style="width: 60%;" id="mobile"></span><span class="valor">60%</span></div>
+                        <div class="contaner" ><span class="espaco" id="mobile"></span><span class="valor">60%</span></div>
                     </div>
                     
                 
