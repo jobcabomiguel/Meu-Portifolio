@@ -39,7 +39,7 @@
     }        
     /** CONFIGURACAO DA ZONA DE BOAS-VINDAS OU ZONE CENTRAL COM A LARGURA TABLET*/
     .direita-center{
-        background-image: url(../Job.png);
+        background-image: url(../job.png);
         background-size: cover;
         background-attachment: fixed;
         background-color: orangered;;
