@@ -39,7 +39,7 @@
     }        
     /** CONFIGURACAO DA ZONA DE BOAS-VINDAS OU ZONE CENTRAL COM A LARGURA TABLET*/
     .direita-center{
-        background-image: url(../img/Job.png);
+        background-image: url(../Job.png);
         background-size: cover;
         background-attachment: fixed;
         background-color: orangered;;
@@ -68,7 +68,7 @@
         height: 100px;
         background-color: darkblue;
         border-radius: 70%;
-        background-image: url(../Job-logo.png);
+        background-image: url(../img/Job-logo.png);
         background-size: cover;
         background-repeat: no-repeat;
         border: 5px solid blue;
