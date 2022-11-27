@@ -42,7 +42,8 @@
         background-image: url(../img/Job.png);
         background-size: cover;
         background-attachment: fixed;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: orangered;;
+        transition: 2s ease-in-out;
         height: 48em;
     }
     .esquerdo h3{

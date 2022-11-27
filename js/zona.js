@@ -53,27 +53,31 @@ function call_back(){
     }
     function pontos(mensa){
         let dados = mensa;
-       
+       welcome = window.document.getElementById('welcome');
        if (dados == 1) {
             numero4 = window.document.getElementById('ponto4');
             numero4.classList.remove('enfase');
             numero1 = window.document.getElementById('ponto1');
             numero1.classList.add('enfase');
+            welcome.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
        }else if (dados == 2) {
             numero1 = window.document.getElementById('ponto1');
             numero1.classList.remove('enfase');
             numero2 = window.document.getElementById('ponto2');
             numero2.classList.add('enfase');
+            welcome.style.backgroundColor = "red";
        }else if (dados == 3) {
             numero2 = window.document.getElementById('ponto2');
             numero2.classList.remove('enfase');
             numero3 = window.document.getElementById('ponto3');
             numero3.classList.add('enfase');
+            welcome.style.backgroundColor = "orangered";
        }else if (dados == 4){
             numero2 = window.document.getElementById('ponto3');
             numero3.classList.remove('enfase');
             numero4 = window.document.getElementById('ponto4');
             numero4.classList.add('enfase');
+            welcome.style.backgroundColor = "darkblue";
        }
     } 
 function animarSessao(){
