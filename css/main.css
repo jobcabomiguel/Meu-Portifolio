@@ -23,6 +23,10 @@
         display: inline-table;
         width: 100%;
     }        
+
+    .esquerdo h3{
+        font-size: 16pt;
+       }
     /** CONFIGURACAO DA BASE DE BOAS-VINDAS OU ZONE CENTRAL COM A LARGURA TABLET*/
     .direita{
         padding-left: 19em;
@@ -39,7 +43,7 @@
     }        
     /** CONFIGURACAO DA ZONA DE BOAS-VINDAS OU ZONE CENTRAL COM A LARGURA TABLET*/
     .direita-center{
-        background-image: url(../Job.png);
+        background-image: url(../job.png);
         background-size: cover;
         background-attachment: fixed;
         background-color: orangered;;
@@ -51,17 +55,10 @@
         font-family: sans-serif;
     }
     .botao-del{
-            display: none;
-            font-size: 15px;
+            background-color: orangered;
             float: right;
             margin: 10px;
-            border: none;
-            padding: 0px 5px 0px 5px;
-            border-radius: 50%;
-            color: red;
-            font-weight: bolder;
-            background-color: white;
-         }
+        }
     /** IMAGEM QUE FICARA NO TOPO DA PAGINA NA ZONA DE NAVEGACAO COM A LARGURA TABLET*/
     .img-pequena{
         width: 40%;
@@ -77,14 +74,23 @@
      /** CONFIGURACAO OS LI DA ZONA DE NAVEGACAO COM A LARGURA TABLET*/       
     .nav-bottom ol li{
         display: block;
-        font-size: 18px;
-        margin: 26px 0px;
+        font-size: 16px;
+        margin: 15% 0px;
         font-family: sans-serif;
     }        
     .nav-bottom ol li a{
-        color: white;
+        color: #666;
         text-decoration: none;
         font-family: sans-serif;
+    }
+    .nav-bottom .activar a{
+        color: white;
+    }
+    .nav-bottom .activar span{
+        color: orangered;
+    }
+    .simbolo{
+        color: #666;
     }
     .in-liner li a{
         display: inline;
@@ -92,6 +98,9 @@
         color: white;
     } 
     /** CONFIGURACAO OS ICONES DE REDES SOCIAIS COM A LARGURA MOBILE*/
+    .in-liner{
+        padding: 0px 5%;
+    }
     .in-liner li{
         list-style: none;
         display: inline-table;
@@ -99,15 +108,13 @@
         border-radius: 50%;
         margin: 0px 5px;
         background-color: blue;
-        font-size: 20px;
+        font-size: 16px;
     }
      /** CONFIGURACAO DO RODAPE COM A LARGURA MOBILE*/       
     footer{
         text-align: center;
-        font-size: 20px;
-        font-family: sans-serif;
-        background-color: orangered;
-        padding: 2em 0px 100% 0px;            
+        font-size: 16px;
+        font-family: sans-serif;           
     }
      /** CONFIGURACAO DO TEXTO DE APRESENTACAO COM A LARGURA MOBILE */
     .texto-sobre{
@@ -180,7 +187,7 @@
             /** CONFIGURACAO OS LI DA ZONA DE NAVEGACAO COM A LARGURA TABLET*/
             .nav-bottom ol li{
                 font-size: 16px;
-                margin: 10px 0px;
+                margin: 10% 0px;
             }
              /** CONFIGURACAO DO RODAPE COM A LARGURA TABLET*/
             .in-liner li{
@@ -189,8 +196,7 @@
             }
             /** CONFIGURACAO DO TEXTO DE APRESENTACAO COM A LARGURA TABLET */
             footer{
-                font-size: 16px;
-                padding: 1em 0px 100% 0px;            
+                font-size: 14px;            
             }
              /** CONFIGURACAO DO TEXTO DE APRESENTACAO COM A LARGURA TABLET */
             .texto-sobre{
@@ -230,19 +236,25 @@
                     width: 90%;
                 }
                 /** CONFIGURACAO OS LI DA ZONA DE NAVEGACAO COM A LARGURA MOBILE*/
+                .nav-bottom ol{
+                    margin: 0px;
+                }
                 .nav-bottom ol li{
                     font-size: 14px;
-                    margin: 10px 0px;
+                    margin: 5px 0px;
                 }
                 /** CONFIGURACAO OS ICONES DE REDES SOCIAIS COM A LARGURA MOBILE*/
+                .in-liner{
+                    padding: 0PX;
+                    margin: 0PX;
+                }
                 .in-liner li{
                     margin: 0px;
                     font-size: 12px;
                 }
                 /** CONFIGURACAO DO RODAPE COM A LARGURA MOBILE*/
                 footer{
-                    font-size: 16px;
-                    padding: 1em 0px 100% 0px;            
+                    font-size: 14px;            
                 }
                 /** CONFIGURACAO DO TEXTO DE APRESENTACAO COM A LARGURA MOBILE */
                 .texto-sobre{
@@ -288,19 +300,19 @@
                     }
                     /** IMAGEM QUE FICARA NO TOPO DA PAGINA NA ZONA DE NAVEGACAO COM A LARGURA MOBILE*/
                     .img-pequena{
-                        width: 70%;
-                        height: 150px;
+                        width: 55%;
+                        height: 100px;
                     }
                     /** CONFIGURACAO OS LI DA ZONA DE NAVEGACAO COM A LARGURA MOBILE*/
                     .nav-bottom ol{
-                        padding: 4em 0;
+                        padding: 0em 0;
                     }
                     .nav-bottom ol li{
-                        font-size: 18px;
+                        font-size: 14px;
                         display: block;
-                        margin: 10px;
-                        text-align: center;
                         width: 200px;
+                        margin-left: 10px;
+                        padding-left: 10px;
                     }
                     /** CONFIGURACAO OS ICONES DE REDES SOCIAIS COM A LARGURA MOBILE*/
                     .in-liner li{
@@ -309,9 +321,8 @@
                     }
                     /** CONFIGURACAO DO RODAPE COM A LARGURA MOBILE*/
                     footer{
-                        font-size: 16px;
-                        clear: both;
-                        padding: 30% 0px 100% 0px;            
+                        font-size: 14px;
+                        clear: both;            
                     }
                     /** CONFIGURACAO DO TEXTO DE APRESENTACAO COM A LARGURA MOBILE */
                     .texto-sobre{
@@ -326,6 +337,9 @@
                     .texto-sobre h2{
                         font-size: 16px;
                         text-indent: 0px;
+                    }
+                    #proficao{
+                        margin-top: 10px;
                     }
                     /** CONFIGURACAO DAS CLASSE SERVICOS COM A LARGURA MOBILE */
                     .servicos{
@@ -345,12 +359,20 @@
                     .mostrar{
                             display: block;
                             width: 40px;
+                            float: right;
                             position: fixed;
                             background-color: rgba(0, 0, 0, 1.0);
                             padding: 6px 4px 6px 4px;
-                            margin-top: 40px;
+                            margin-top: -8em;
+                            margin-right: 30px;
+                            margin-left: 70%;
                             background-color: orangered;
                             border-radius: 5px;
+                        }
+                        .ul-button{
+                            width: 100%;
+                            background-color: red;
+
                         }
                         .linhas{
                             display: block;
@@ -362,23 +384,32 @@
                         }
                     }
                     @media(max-width: 400px){
+                     
+                    .esquerdo h3{
+                        font-size: 14pt;
+                       }   
                     /** CONFIGURACAO OS LI DA ZONA DE NAVEGACAO COM A LARGURA MOBILE*/
+                    .img-pequena{
+                        width: 45%;
+                        height: 80px;
+                    }
                     .nav-bottom ol li{
-                        font-size: 16px;
+                        padding: 5% 10px;
+                        font-size: 14px;
                     }
                     .nav-bottom ol{
                         padding: 1em 0;
                     }
                     /** CONFIGURACAO OS ICONES DE REDES SOCIAIS COM A LARGURA MOBILE*/
                     .in-liner li{
-                        margin: 0px;
+                        margin: 0px 2px;
                         font-size: 10px;
                     }
                     /** CONFIGURACAO DO RODAPE COM A LARGURA MOBILE*/
                     footer{
-                        font-size: 14px;
-                        clear: both;
-                        padding: 50% 0px 40% 0px;            
+                        padding: 60% 0px 10% 0px;
+                        font-size: 12px;
+                        clear: both;            
                     }
                     /** CONFIGURACAO DO TEXTO DE APRESENTACAO COM A LARGURA MOBILE */
                     .texto-sobre{
@@ -394,6 +425,56 @@
                         font-size: 16px;
                         text-indent: 0px;
                     }
+                    .mostrar{
+                            margin-left: 65%;
+                    }
+                }
+                @media(max-width: 320px){
+                     
+                    .esquerdo h3{
+                        font-size: 14pt;
+                       }   
+                    /** CONFIGURACAO OS LI DA ZONA DE NAVEGACAO COM A LARGURA MOBILE*/
+                    .img-pequena{
+                        width: 45%;
+                        height: 80px;
+                    }
+                    .nav-bottom ol li{
+                        padding: 2% 10px;
+                        font-size: 14px;
+                    }
+                    .nav-bottom ol{
+                        padding: 1em 0;
+                    }
+                    /** CONFIGURACAO OS ICONES DE REDES SOCIAIS COM A LARGURA MOBILE*/
+                    .in-liner li{
+                        margin: 0px 2px;
+                        font-size: 10px;
+                    }
+                    /** CONFIGURACAO DO RODAPE COM A LARGURA MOBILE*/
+                    footer{
+                        padding: 10% 0px 30% 0px;
+                        font-size: 12px;
+                        clear: both;            
+                    }
+                    /** CONFIGURACAO DO TEXTO DE APRESENTACAO COM A LARGURA MOBILE */
+                    .texto-sobre{
+                        padding: 10em 0em 100% 6%; 
+                    }
+                    /** configuracao do h1*/
+                    .texto-sobre h1{
+                        font-size: 45px;
+                        padding-top: 0px;
+                    }
+                    /** configuracao do h2*/
+                    .texto-sobre h2{
+                        font-size: 16px;
+                        text-indent: 0px;
+                    }
+                    .mostrar{
+                            margin-left: 65%;
+                    }
+                }
 
 
 

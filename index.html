@@ -19,25 +19,22 @@
         .espaco{
             transition: 6s ease-in-out;
         }
+        .cria-aqui{
+            color: orangered;
+        }
+       .links_active{
+           color: white;
+        }
     </style>
     <link rel="stylesheet"  href="css/main.css">
     <link rel="stylesheet"  href="css/section.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/main.js"></script>
 </head>
-<body onload="profissoes()" id="body" onscroll="animarSessao()">
+<body onload="profissoes()" id="body" onscroll="animarSessao()" >
     <main class="principal">
-        <div class="button-mobile">
-            <ul class="" onclick="activar_links(1)">
-                        <div class="mostrar">
-                          <span class="linhas"></span>
-                          <span class="linhas"></span>
-                          <span class="linhas"></span>
-                        </div>
-                      </ul>
-        </div>
         <section class="centro esquerdo" id="esquerda">
-            <button class="botao-del" onclick="activar_links(0)">X</button>
+            <button class="botao-del arrow-bar-lef" onclick="activar_links(0)">x</button>
             <div class="img-pequena">
                       
             </div>
@@ -53,17 +50,17 @@
                    <article class="centrar-zone">
                       <article class="" id="zone-nav">
                           <ol class="zone-nav" >
-                            <li> <span class="bi-house-heart"></span> <a href="#body">Home </a></li>
-                            <li> <span class="bi-person-workspace"></span>  <a href="#worked">Serviços </a></li>
-                            <li> <span class="bi-telephone-forward"></span>  <a href="#contacts">Contactos </a></li>
-                            <li> <span class="bi-images"></span>  <a href="#fotos">Fotos </a></li>
-                            <li> <span class="bi-person-circle"></span> <a href="#about">Sobre </a></li>
+                            <li id="home-li" class="activar" > <span class="bi-house-heart "></span> <a href="#body">Home </a></li>
+                            <li id="servico-li"> <span class="simbolo bi-person-workspace"></span>  <a href="#worked">Serviços </a></li>
+                            <li id="contacto-li"> <span class="simbolo bi-telephone-forward"></span>  <a href="#contacts">Contactos </a></li>
+                            <li id="foto-li"> <span class="simbolo bi-images"></span>  <a href="#fotos">Fotos </a></li>
+                            <li id="sobre-li"> <span class="simbolo bi-person-circle"></span> <a href="#about">Sobre </a></li>
                           </ol>
                       </article>
                   </div>
         <footer>
             <section class="footer-bottom">
-                <p> 2022 &copy Copyright JOB CABO. Todos os direitos reservados </p>
+                <p> 2022 &copy Copyright Jobersson Tecno. Todos os direitos reservados </p>
                 <p> Desenvolvido Pela <span class="cria-aqui">Criaki Desenvolvimentos</span></p>
             </section>    
      </footer>
@@ -73,8 +70,14 @@
                 <div class="">
                 <aside class="direita-center" id="welcome">
                      <article class="texto-sobre">
-
-                            <p> Ola, Seja Bem-Vindo </p>
+                      <ul class="ul-button" onclick="activar_links(1)" ondblclick="activar_links(0)">
+                        <div class="mostrar">
+                          <span class="linhas"></span>
+                          <span class="linhas"></span>
+                          <span class="linhas"></span>
+                          </div>
+                       </ul>
+                        <p> Ola, Seja Bem-Vindo </p>
                             <h1> Job Manuel <br> Cabo Miguel  </h1>
                             <h2> Eu sou <span id="proficao"> Desenvolvedor Web </span> <span id="ponto1" class="ponto enfase">.</span> <span id="ponto2" class="ponto" >.</span> <span id="ponto3" class="ponto">.</span> <span id="ponto4" class="ponto">.</span></h2>
 
@@ -82,29 +85,8 @@
                 
                 </aside>       
                 </div>
-                <div class="servicos" id="worked">
-                    <h3>Serviços</h3>
-                    <p>  Meus Serviços :</p>
 
-                <div class="linha-servicos">
-                         <ul class="">
-                            <li>Criação de Sites</li>
-                            <li>Criação de Bloguer</li>
-                            <li> Criação de Ecommerce </li>
-                            <li> Criação de Aplicações Web </li>
-                            <li> Criação de Jogos Personalizados</li>
-                          </ul>
-                    <h2>Outros serviços</h2>
-                            <ul>
-                                <li> Desenvolvimento de publicidade</li>
-                                <li> Serviços Computacionais</li>
-                                <li> Serviços de Gráfica</li>
-                                <li> Criação de videos</li>
-                            </ul>
-                </div> 
-            </div>
-
-             <div class="servicos" id="about"> 
+                <div class="servicos" id="about"> 
                         <h3>Sobre me</h3>
                         
                         <p>Job Miguel nascei no dia 04 de Julho de 2004 em Luanda no municipio do Cazenga. Onde passou uma
@@ -118,7 +100,7 @@
                             <p>
                             Job Miguel é um jovem muito trabalhador e sonhador, estudante de desenvolvimento Web e Mobile muito apaixonado 
                             por TICs. Está a estudar o desenvolvimento Web e Mobile e procura trabalhar e desenvolver 
-                            um serviço de muita qualidade que satisfaça as necessidade das pessoas e entidades empresarial e ajude no desenvolvimento socio-económico de Angola.</p>
+                            um serviço de muita qualidade que satisfaça as necessidade das pessoas e ajude no desenvolvimento socio-económico de Angola.</p>
                         <h2 id="habilidades">Habiidade </h2>
                         
                         <div class="conhecimento-zone">
@@ -157,9 +139,29 @@
                         <p>DESENVOLVIMENTO DE MOBILE</p>
                         <div class="contaner" ><span class="espaco" id="mobile"></span><span class="valor">60%</span></div>
                     </div>
-                    
-                
-                <div class="servicos" id="contacts">
+                  </div>
+                <div class="servicos" id="worked">
+                    <h3>Serviços</h3>
+                    <p>  Meus Serviços :</p>
+
+                <div class="linha-servicos">
+                         <ul class="">
+                            <li>Criação de Sites</li>
+                            <li>Criação de Bloguer</li>
+                            <li> Criação de Ecommerce </li>
+                            <li> Criação de Aplicações Web </li>
+                            <li> Criação de Jogos Personalizados</li>
+                          </ul>
+                    <h2>Outros serviços</h2>
+                            <ul>
+                                <li> Desenvolvimento de publicidade</li>
+                                <li> Serviços Computacionais</li>
+                                <li> Serviços de Gráfica</li>
+                                <li> Criação de videos</li>
+                            </ul>
+                </div> 
+            </div>
+            <div class="servicos" id="contacts">
                     <h3>Meus contactos</h3>
 
                     <p> Todos os meus contactos estão disponiveis 24 horas ao dia.</p>
@@ -178,7 +180,6 @@
                 <p><span class="bi-chevron-right seta1"></span>  Telegram </span> : <span class="objectos">965-321-897</span> 
                 <span class="bi-telegram seta2"></p>
                         </div>
-
             <div class="servicos" id="fotos">
                     <h3>Minhas fotos</h3>
                     <div class="fotos-zone">
@@ -227,6 +228,48 @@
     </main>
 </body>
 <script>
+    sobre = window.document.getElementById('sobre-li');
+    sobre.addEventListener('click', function(){
+        window.document.getElementById('sobre-li').classList.add('activar');
+        window.document.getElementById('home-li').classList.remove('activar');
+        window.document.getElementById('servico-li').classList.remove('activar');
+        window.document.getElementById('contacto-li').classList.remove('activar');
+        window.document.getElementById('foto-li').classList.remove('activar');
+    })
+
+    home = window.document.getElementById('home-li');
+      home.addEventListener('click', function(){
+        window.document.getElementById('home-li').classList.add('activar');
+        window.document.getElementById('sobre-li').classList.remove('activar');
+        window.document.getElementById('servico-li').classList.remove('activar');
+        window.document.getElementById('contacto-li').classList.remove('activar');
+        window.document.getElementById('foto-li').classList.remove('activar');
+    })
+    fotos = window.document.getElementById('foto-li');
+      fotos.addEventListener('click', function(){
+        window.document.getElementById('home-li').classList.remove('activar');
+        window.document.getElementById('sobre-li').classList.remove('activar');
+        window.document.getElementById('servico-li').classList.remove('activar');
+        window.document.getElementById('contacto-li').classList.remove('activar');
+        window.document.getElementById('foto-li').classList.add('activar');
+    })
+    contactos = window.document.getElementById('contacto-li');
+      contactos.addEventListener('click', function(){
+        window.document.getElementById('home-li').classList.remove('activar');
+        window.document.getElementById('sobre-li').classList.remove('activar');
+        window.document.getElementById('servico-li').classList.remove('activar');
+        window.document.getElementById('contacto-li').classList.add('activar');
+        window.document.getElementById('foto-li').classList.remove('activar');
+    })
+    servicos = window.document.getElementById('servico-li');
+      servicos.addEventListener('click', function(){
+        window.document.getElementById('home-li').classList.remove('activar');
+        window.document.getElementById('sobre-li').classList.remove('activar');
+        window.document.getElementById('servico-li').classList.add('activar');
+        window.document.getElementById('contacto-li').classList.remove('activar');
+        window.document.getElementById('foto-li').classList.remove('activar');
+    })
+
 
 </script>
 <script src="js/zona.js"></script>  

@@ -8,7 +8,6 @@
 
 
 function activar_links(valores){
-     
      zone_links = window.document.getElementById('esquerda'); 
      if (valores == 1) {
            zone_links.style.display = 'block'; 
@@ -83,7 +82,9 @@ function call_back(){
 function animarSessao(){
      windowTop = window.pageYOffset / 20 ;
      sobre = window.document.getElementById('habilidades');                         
-     sobreTop = sobre.offsetHeight * 4 - 40; 
+     sobreTop = sobre.offsetHeight * 4 - 40;
+     Window = window.pageYOffset;
+        console.log(Window) 
        if (windowTop >= sobreTop) {
           somarValores() 
        }else{
